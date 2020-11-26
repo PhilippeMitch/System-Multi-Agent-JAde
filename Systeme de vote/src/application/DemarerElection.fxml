@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="PanetableauGent" prefHeight="557.0" prefWidth="751.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DemarerElectionController">
+   <children>
+      <AnchorPane fx:id="rootPane" layoutX="16.0" layoutY="14.0" prefHeight="544.0" prefWidth="735.0">
+         <children>
+            <AnchorPane layoutX="-6.0" layoutY="-3.0" prefHeight="252.0" prefWidth="725.0" styleClass="PanetableauGent" stylesheets="@application.css">
+               <children>
+                  <GridPane layoutX="2.0" layoutY="8.0" prefHeight="203.0" prefWidth="703.0" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="8.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="375.0" minWidth="10.0" prefWidth="200.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="673.0" minWidth="10.0" prefWidth="570.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <AnchorPane prefHeight="203.0" prefWidth="165.0" style="-fx-background-color: #046380;">
+                           <children>
+                              <MaterialDesignIconView fill="#d7612a" glyphName="ALARM" layoutX="12.0" layoutY="157.0" size="150.0" />
+                           </children></AnchorPane>
+                        <StackPane prefHeight="204.0" prefWidth="534.0" GridPane.columnIndex="1">
+                           <children>
+                              <AnchorPane fx:id="panelCompteur" prefHeight="208.0" prefWidth="534.0" style="-fx-background-color: #fffcfc;">
+                                 <children>
+                                    <GridPane layoutX="84.0" layoutY="40.0" prefHeight="204.0" prefWidth="534.0" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints maxHeight="167.0" minHeight="10.0" prefHeight="144.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <GridPane layoutX="10.0" layoutY="10.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="113.0" minHeight="10.0" prefHeight="112.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Secondes" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                                                <Text layoutX="10.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minutes" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                                <Text layoutX="263.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heures" GridPane.halignment="CENTER" />
+                                                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                                   <padding>
+                                                      <Insets right="10.0" />
+                                                   </padding>
+                                                   <children>
+                                                      <Text fx:id="txtHeures" layoutX="40.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+                                                         <font>
+                                                            <Font size="77.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <padding>
+                                                      <Insets right="10.0" top="10.0" />
+                                                   </padding>
+                                                   <children>
+                                                      <Text fx:id="txtMinutes" layoutX="40.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+                                                         <font>
+                                                            <Font size="77.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Text fx:id="txtSecondes" layoutX="42.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+                                                         <font>
+                                                            <Font size="77.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </GridPane>
+                                          <JFXButton fx:id="btnArreter" buttonType="RAISED" onAction="#btnArreterElectionAction" prefHeight="38.0" prefWidth="183.0" styleClass="topPane" text="Arreter" textAlignment="RIGHT" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#fffdfd" glyphName="STOP" size="15.0" />
+                                             </graphic>
+                                          </JFXButton>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="panelReglage" prefHeight="210.0" prefWidth="534.0" style="-fx-background-color: #fffcfc;">
+                                 <children>
+                                    <GridPane layoutX="112.0" layoutY="37.0" prefHeight="219.0" prefWidth="534.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints maxHeight="166.0" minHeight="10.0" prefHeight="142.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="86.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <JFXButton fx:id="btnDemarer" buttonType="RAISED" onAction="#btnDemarerElectionAction" prefHeight="38.0" prefWidth="183.0" styleClass="topPane" text="Demarer" textAlignment="RIGHT" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#fffdfd" glyphName="HOURGLASS" size="15.0" />
+                                             </graphic>
+                                          </JFXButton>
+                                          <GridPane>
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="278.0" minWidth="10.0" prefWidth="198.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="380.0" minWidth="10.0" prefWidth="372.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Text fill="#046380" strokeType="OUTSIDE" strokeWidth="0.0" text="Heures" GridPane.halignment="CENTER">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#046380" layoutX="95.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minutes" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#046380" layoutX="95.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Secondes" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <JFXComboBox fx:id="cmbHeures" focusColor="#046380" prefHeight="26.0" prefWidth="195.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                                <JFXComboBox fx:id="cmbMinutes" focusColor="#046380" layoutX="208.0" layoutY="21.0" prefHeight="26.0" prefWidth="195.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                                <JFXComboBox fx:id="cmbSecondes" focusColor="#046380" layoutX="208.0" layoutY="69.0" prefHeight="26.0" prefWidth="195.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                             </children>
+                                          </GridPane>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </GridPane>
+                  <JFXButton fx:id="btnCloseButton" contentDisplay="CENTER" layoutX="685.0" layoutY="-1.0" onAction="#btnCloaseButonAction" prefHeight="38.0" prefWidth="40.0" text=" ">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="btnClose" fill="#a40f0f" glyphName="CLOSE" size="20.0" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="rootPane1" layoutX="-6.0" layoutY="270.0" prefHeight="173.0" prefWidth="474.0" styleClass="PanetableauGent">
+               <children>
+                  <Label fx:id="lblRepublicain" layoutX="163.0" layoutY="14.0" prefHeight="36.0" prefWidth="141.0" text="Republicain">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblDemocrate" layoutX="14.0" layoutY="14.0" prefHeight="36.0" prefWidth="127.0" text="Democrate">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="145.0" layoutY="18.0" orientation="VERTICAL" prefHeight="36.0" prefWidth="6.0" />
+                  <Separator layoutX="307.0" layoutY="15.0" orientation="VERTICAL" prefHeight="36.0" prefWidth="6.0" />
+                  <Label fx:id="lblAbstention" layoutX="323.0" layoutY="18.0" prefHeight="36.0" prefWidth="134.0" text="Abstention">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <PieChart fx:id="pieChart" layoutX="14.0" layoutY="60.0" prefHeight="68.0" prefWidth="447.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="475.0" layoutY="268.0" prefHeight="203.0" prefWidth="242.0" styleClass="PanetableauGent" stylesheets="@application.css">
+               <children>
+                  <Text layoutX="22.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Partie Democrate" />
+                  <Text layoutX="22.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Partie Republicain" />
+                  <Text layoutX="22.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Abstention" />
+                  <Text fx:id="txtNmbreVoixDemocrate" fill="#ea7413" layoutX="162.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font></Text>
+                  <Text fx:id="txtNmbreVoixRepublicain" fill="#ea7413" layoutX="162.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font></Text>
+                  <Text fx:id="txtNmbreVoixAbstention" fill="#ea7413" layoutX="162.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-3.0" layoutY="491.0" prefHeight="38.0" prefWidth="738.0" styleClass="PanetableauGent">
+               <children>
+                  <Text fx:id="lblResultatElection" layoutX="17.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resultat de l'election">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

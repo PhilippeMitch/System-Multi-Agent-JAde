@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="1087.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DashboardController">
+   <children>
+      <VBox layoutX="-1.0" layoutY="131.0" prefHeight="401.0" prefWidth="252.0" styleClass="menu_list" stylesheets="@application.css" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="-1.0" AnchorPane.topAnchor="131.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="252.0" text="ELECTION" textFill="#171717">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="60.0" />
+               </VBox.margin>
+            </Label>
+            <JFXButton fx:id="btnDashboard" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnDashboardAction" prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" text="DashBoard" textFill="#5b5858">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnNewElection" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnNewElectionAction" prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" text="Nouvelle election" textFill="#5b5858">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnListElection" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnListElectionAction" prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" text="Liste election" textFill="#5b5858">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnBulletin" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnBulletinAction" prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" text="Bulletin" textFill="#5b5858">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <Label prefHeight="30.0" prefWidth="252.0" text="CANDIDAT" textFill="#171717">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <JFXButton fx:id="btnNewCandidat" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnNewCandidatAction" prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" text="Nouveau Candidat" textFill="#5b5858">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnListCandidat" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnListCandidatAction" prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" text="Liste des Candidats" textFill="#5b5858">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </VBox>
+      <AnchorPane layoutY="-1.0" prefHeight="132.0" prefWidth="925.0" snapToPixel="false" styleClass="topPane" stylesheets="@application.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="578.0" layoutY="10.0" text="GEDEON -" textFill="#fffefe">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="698.0" layoutY="10.0" text="System" textFill="#ff5b2b">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="884.0" layoutY="1.0" prefHeight="25.0" prefWidth="35.0" styleClass="buttonMinus" text=" " AnchorPane.rightAnchor="4.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="MINUS" scaleX="1.3" size="15.0" text="" />
+               </graphic>
+               <padding>
+                  <Insets left="10.0" top="2.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton layoutX="761.0" onAction="#btnDisconnectAction" prefHeight="35.0" prefWidth="128.0" text="Deconnexion" textFill="WHITE" AnchorPane.rightAnchor="36.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CLOSE" size="14.0" />
+               </graphic>
+            </JFXButton>
+            <Label fx:id="nomUser" layoutX="287.0" layoutY="66.0" text="\$" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="35.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane fx:id="pane" layoutX="210.0" layoutY="59.0" />
+      <AnchorPane layoutX="121.0" layoutY="37.0" prefHeight="139.0" prefWidth="152.0" styleClass="PaneDashboard_2">
+         <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="BOOKMARK" layoutX="43.0" layoutY="105.0" size="100.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="246.0" layoutY="461.0" prefHeight="40.0" prefWidth="844.0" styleClass="bar_bottom" stylesheets="@application.css" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="246.0" AnchorPane.rightAnchor="-3.0">
+         <children>
+            <Label layoutX="469.0" layoutY="8.0" styleClass="bottom-text" text="Mitch |" />
+            <Label layoutX="531.0" layoutY="8.0" text="Technologie" textFill="#ff5b2b">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="347.0" layoutY="8.0" text="Developed by">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

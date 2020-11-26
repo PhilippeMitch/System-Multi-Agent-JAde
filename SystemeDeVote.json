@@ -1,0 +1,33 @@
+[
+{"type":"header","version":"4.8.3","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"JedeonSystem"},
+{"type":"table","name":"Candidat_Election","database":"JedeonSystem","data":
+[
+{"NumeroSocialCandidat":"1874227643","dateElection":"2019-02-18","nombreVoix":"0","PartiCandidat":"Republicain","PosteCandidat":"Senateur"},
+{"NumeroSocialCandidat":"1874927643","dateElection":"2019-02-20","nombreVoix":"0","PartiCandidat":"Democrate","PosteCandidat":"President"},
+{"NumeroSocialCandidat":"1874927645","dateElection":"2019-02-18","nombreVoix":"0","PartiCandidat":"Democrate","PosteCandidat":"Senateur"},
+{"NumeroSocialCandidat":"9076302734","dateElection":"2019-02-20","nombreVoix":"0","PartiCandidat":"Republicain","PosteCandidat":"President"}
+]
+}
+,{"type":"table","name":"Election","database":"JedeonSystem","data":
+[
+{"id":"13738105","date":"2019-02-20","type":"En cours","status":"Sénatoriales"},
+{"id":"83367382","date":"2019-02-18","type":"En cours","status":"Présidentielle"}
+]
+}
+,{"type":"table","name":"Personne","database":"JedeonSystem","data":
+[
+{"NumeroSocial":"1874927643","Nom":"Brown","Prenom":"Janette","Sexe":"Feminin","Date":"1960-03-10"},
+{"NumeroSocial":"3880269643","Nom":"Pierre","Prenom":"Joseph","Sexe":"Masculin","Date":"1965-01-21"},
+{"NumeroSocial":"9076302734","Nom":"Philippe","Prenom":"Mc Clain","Sexe":"Masculin","Date":"1970-01-01"},
+{"NumeroSocial":"9370973531","Nom":"Jhon","Prenom":"Marckey","Sexe":"Masculin","Date":"1970-03-20"}
+]
+}
+,{"type":"table","name":"User","database":"JedeonSystem","data":
+[
+{"IdUser":"admin","PassUser":"admin","IsActive":"1"},
+{"IdUser":"H3J-1234","PassUser":"jesus","IsActive":"1"},
+{"IdUser":"jesus","PassUser":"jesus","IsActive":"1"}
+]
+}
+]

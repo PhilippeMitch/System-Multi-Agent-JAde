@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="418.0" prefWidth="823.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddCandidat">
+   <children>
+      <AnchorPane fx:id="rootPane" layoutX="17.0" layoutY="46.0" prefHeight="350.0" prefWidth="769.0" styleClass="PanetableauGent">
+         <children>
+            <JFXTextField fx:id="txtNumSocial" focusColor="#046380" layoutX="21.0" layoutY="116.0" prefHeight="26.0" prefWidth="183.0" promptText="Numero Sociale">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="cmbPosteCnadidature" focusColor="#046380" layoutX="293.0" layoutY="115.0" prefHeight="28.0" prefWidth="183.0" promptText="Poste Candature" styleClass="combo" />
+            <Pane layoutX="-1.0" layoutY="280.0" prefHeight="70.0" prefWidth="770.0" style="-fx-background-color: #F0F0F0;">
+               <children>
+                  <Label layoutX="20.0" layoutY="28.0" text="Si le numero sociale n'est pas reconnu le nouveau candidat ne peut etre ajouter" textFill="#ff5b2b" />
+               </children>
+            </Pane>
+            <Separator layoutX="11.0" layoutY="70.0" prefHeight="16.0" prefWidth="746.0" />
+            <AnchorPane layoutX="14.0" layoutY="-28.0" prefHeight="90.0" prefWidth="90.0" styleClass="PaneDashboard_3">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="24.0" layoutY="58.0" size="50.0" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="124.0" layoutY="25.0" text="Candidat" textFill="#ff5b2b">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="528.0" layoutY="16.0" text="Date inscription" textFill="#046380">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="527.0" layoutY="33.0" text="16" textFill="#aeacac">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="581.0" layoutY="37.0" text="APR" textFill="#046380" />
+            <Label layoutX="581.0" layoutY="55.0" text="2018" textFill="#aeacac" />
+            <Separator layoutX="649.0" layoutY="13.0" orientation="VERTICAL" prefHeight="64.0" prefWidth="0.0" />
+            <Label layoutX="665.0" layoutY="15.0" text="Date election" textFill="#046380">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="664.0" layoutY="32.0" text="16" textFill="#aeacac">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="718.0" layoutY="36.0" text="APR" textFill="#046380" />
+            <Label layoutX="718.0" layoutY="54.0" text="2018" textFill="#aeacac" />
+            <JFXComboBox fx:id="cmbPartiPolitoque" focusColor="#046380" layoutX="23.0" layoutY="189.0" prefHeight="28.0" prefWidth="183.0" promptText="Partie Politique" styleClass="combo" />
+            <JFXButton fx:id="btnEnregistrer" buttonType="RAISED" layoutX="615.0" layoutY="184.0" onAction="#btnSaveCandidat" prefHeight="38.0" prefWidth="126.0" styleClass="topPane" text="Enregistrer" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#fffdfd" glyphName="SAVE" size="15.0" />
+               </graphic>
+            </JFXButton>
+            <JFXComboBox fx:id="cmbDateElection" focusColor="#046380" layoutX="293.0" layoutY="189.0" prefHeight="28.0" prefWidth="183.0" promptText="Election" styleClass="combo" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
