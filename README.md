@@ -4,6 +4,22 @@ système, logiciels, télécommunications et documentation destinés à être ut
 
 Mais vous aurez une idée sur les système multi agents et la plateforme Jade
 
+Jade Remote Agent          |  Jade Remote Agent With Containers
+:-------------------------:|:-------------------------:
+![img1.png](images/img1.png) | ![im2.png](images/im2.png)
+
+#### Actions
+| ![img3.png](images/img3.png)
+
+#### GUI
+Avant la sélection         |  Après la sélection
+:-------------------------:|:-------------------------:
+![img1.png](images/img6.png) | ![im2.png](images/img5.png)
+
+Résultat         |
+:-------------------------:|
+![img1.png](images/img4.png) |
+
 ### Outils
 
 * IDE Eclipse
